@@ -39,6 +39,7 @@ namespace XsiO
             this.b12 = new System.Windows.Forms.Button();
             this.b33 = new System.Windows.Forms.Button();
             this.reset = new System.Windows.Forms.Button();
+            this.cineMuta = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // b11
@@ -59,6 +60,7 @@ namespace XsiO
             this.b32.Size = new System.Drawing.Size(75, 75);
             this.b32.TabIndex = 1;
             this.b32.UseVisualStyleBackColor = true;
+            this.b32.Click += new System.EventHandler(this.b32_Click);
             // 
             // b31
             // 
@@ -68,6 +70,7 @@ namespace XsiO
             this.b31.Size = new System.Drawing.Size(75, 75);
             this.b31.TabIndex = 2;
             this.b31.UseVisualStyleBackColor = true;
+            this.b31.Click += new System.EventHandler(this.b31_Click);
             // 
             // b23
             // 
@@ -77,6 +80,7 @@ namespace XsiO
             this.b23.Size = new System.Drawing.Size(75, 75);
             this.b23.TabIndex = 3;
             this.b23.UseVisualStyleBackColor = true;
+            this.b23.Click += new System.EventHandler(this.b23_Click);
             // 
             // b22
             // 
@@ -126,6 +130,7 @@ namespace XsiO
             this.b33.Size = new System.Drawing.Size(75, 75);
             this.b33.TabIndex = 8;
             this.b33.UseVisualStyleBackColor = true;
+            this.b33.Click += new System.EventHandler(this.b33_Click);
             // 
             // reset
             // 
@@ -137,11 +142,22 @@ namespace XsiO
             this.reset.UseVisualStyleBackColor = true;
             this.reset.Click += new System.EventHandler(this.reset_Click);
             // 
+            // cineMuta
+            // 
+            this.cineMuta.AutoSize = true;
+            this.cineMuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cineMuta.Location = new System.Drawing.Point(532, 165);
+            this.cineMuta.Name = "cineMuta";
+            this.cineMuta.Size = new System.Drawing.Size(36, 36);
+            this.cineMuta.TabIndex = 10;
+            this.cineMuta.Text = "X";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cineMuta);
             this.Controls.Add(this.reset);
             this.Controls.Add(this.b33);
             this.Controls.Add(this.b12);
@@ -155,6 +171,7 @@ namespace XsiO
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -170,6 +187,7 @@ namespace XsiO
         private System.Windows.Forms.Button b12;
         private System.Windows.Forms.Button b33;
         private System.Windows.Forms.Button reset;
+        private System.Windows.Forms.Label cineMuta;
     }
 }
 
